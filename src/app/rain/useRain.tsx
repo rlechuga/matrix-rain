@@ -2,7 +2,7 @@
 
 import React, { useEffect, useRef, useState } from 'react';
 
-import EffectRain from './EffectRain';
+import RainEffect from './RainEffect';
 
 const useRain = () => {
   const [canvasInfo, setCanvasInfo] = useState({
@@ -28,7 +28,7 @@ const useRain = () => {
     const fontSize = 25;
     const columns = canvasWidth / fontSize;
 
-    const effect = new EffectRain({
+    const effect = new RainEffect({
       canvasWidth,
       canvasHeight,
       fontSize,
@@ -109,14 +109,14 @@ const useRain = () => {
     return gradient;
   };
 
-  const CanvasRain = (
+  const RainCanvas = (
     <canvas
       ref={canvasRef}
       width={canvasInfo.width}
       height={canvasInfo.height}
     />
   );
-  return { CanvasRain };
+  return { RainCanvas };
 };
 
 export default useRain;

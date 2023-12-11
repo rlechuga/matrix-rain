@@ -1,4 +1,4 @@
-import SymbolRain from './SymbolRain';
+import RainSymbol from './RainSymbol';
 
 interface EffectProps {
   canvasWidth: number;
@@ -7,12 +7,12 @@ interface EffectProps {
   columns: number;
 }
 
-class Effect {
+class RainEffect {
   canvasWidth: number;
   canvasHeight: number;
   fontSize: number;
   columns: number;
-  symbols: SymbolRain[];
+  symbols: RainSymbol[];
 
   constructor({ canvasWidth, canvasHeight, fontSize, columns }: EffectProps) {
     this.canvasWidth = canvasWidth;
@@ -22,10 +22,10 @@ class Effect {
     this.symbols = this.initialize();
   }
 
-  private initialize(): SymbolRain[] {
-    const symbols: SymbolRain[] = [];
+  private initialize(): RainSymbol[] {
+    const symbols: RainSymbol[] = [];
     for (let i = 0; i < this.columns; i++) {
-      symbols[i] = new SymbolRain({
+      symbols[i] = new RainSymbol({
         x: i,
         y: 0,
         fontSize: this.fontSize,
@@ -35,7 +35,7 @@ class Effect {
     return symbols;
   }
 
-  resize(width:number, height: number): void {
+  resize(width: number, height: number): void {
     this.canvasWidth = width;
     this.canvasHeight = height;
     this.columns = this.canvasWidth / this.fontSize;
@@ -44,4 +44,4 @@ class Effect {
   }
 }
 
-export default Effect;
+export default RainEffect;

@@ -5,7 +5,7 @@ interface SymbolProps {
   canvasHeight: number;
 }
 
-class SymbolRain {
+class RainSymbol {
   characters =
     'アァカサタナハマヤャラワガザダバパイィキシチニヒミリヰギジヂビピウゥクスツヌフムユュルグズブヅプエェケセテネヘメレヱゲゼデベペオォコソトノホモヨョロヲゴゾドボポヴッン0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZ';
   x: number;
@@ -34,4 +34,4 @@ class SymbolRain {
   }
 }
 
-export default SymbolRain;
+export default RainSymbol;

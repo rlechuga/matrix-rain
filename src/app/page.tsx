@@ -3,6 +3,6 @@
 import useRain from './rain/useRain';
 
 export default function Home() {
-  const { CanvasRain } = useRain();
-  return CanvasRain;
+  const { RainCanvas } = useRain();
+  return RainCanvas;
 }
