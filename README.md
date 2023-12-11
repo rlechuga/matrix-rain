@@ -8,3 +8,7 @@ Full screen matrix rain
 * Tailwind
 * HTML canvas
   - createRedialGradient()
+
+### To Run Project
+* npm install
+* npm run dev
