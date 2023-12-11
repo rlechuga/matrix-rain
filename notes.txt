@@ -1,0 +1,12 @@
+
+/// sources 
+https://www.youtube.com/watch?v=f5ZswIE_SgY
+https://codepen.io/franksLaboratory/pen/yLoWYaz
+
+/// next rain on an image
+https://www.youtube.com/watch?v=RCVxXgJ8xSk
+https://codepen.io/Mamboleoo/pen/GRJKoBw
+https://codepen.io/franksLaboratory
+
+// image particles rain with vanilla javascript
+https://codepen.io/franksLaboratory/pen/vYKRpvE
